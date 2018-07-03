@@ -1,0 +1,17 @@
+package main
+
+import (
+	"log"
+	"os"
+	"path/filepath"
+)
+
+var (
+	FirefoxPath         = "/usr/bin/firefox"
+	FirefoxProfile      = os.Getenv("HOME") + "/.mozilla/firefox/*"
+	CertutilInstallHelp = "apt install libnss3-tools"
+	log.Println("  -install is not yet fully supported on Linux  😣")
+	log.Printf("You can manually install the root certificate at %q in the meantime.", filepath.Join(m.CAROOT, rootName))
+}
+
+func (m *mkcert) uninstallPlatform() {}
